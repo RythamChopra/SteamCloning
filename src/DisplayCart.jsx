@@ -44,7 +44,6 @@ const DisplayCart = ({ cartItems, onRemove }) => {
         {cartItems.length > 0 && (
           <div className="mt-4 p-4 bg-white rounded-lg shadow-md">
             <h3 className="text-lg font-bold">Amount: Rs. {totalAmount.toFixed(2)}</h3>
-            {/* Checkout Button */}
             <Checkout totalAmount={totalAmount} />
           </div>
         )}

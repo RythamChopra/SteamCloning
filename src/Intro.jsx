@@ -1,4 +1,5 @@
-import { introData } from "./introData";
+import { introData } from "./introData"; 
+import { Link } from "react-router-dom"; 
 
 const Intro = () => {
   return (
@@ -11,9 +12,9 @@ const Intro = () => {
         <ul className="flex justify-center space-x-8">
           {introData.map((item) => (
             <li key={item.id}>
-              <a href={item.link} className="text-white hover:text-yellow-400 transition duration-200 cursor-pointer">
+              <Link to={item.link} className="text-white hover:text-yellow-400 transition duration-200">
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
